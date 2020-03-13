@@ -1,4 +1,4 @@
-package rescue
+package animalrescue
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
@@ -8,12 +8,12 @@ import (
 func Provider() terraform.ResourceProvider {
 	return &schema.Provider{
 		DataSourcesMap: map[string]*schema.Resource{
-			"rescue_adopter": dataSourceRescueAdopter(),
-			"rescue_adoptee": dataSourceRescueAdoptee(),
+			"animalrescue_adopter": dataSourceAnimalRescueAdopter(),
+			"animalrescue_adoptee": dataSourceAnimalRescueAdoptee(),
 		},
 		ResourcesMap: map[string]*schema.Resource{
-			"rescue_adopter": resourceRescueAdopter(),
-			"rescue_adoptee": resourceRescueAdoptee(),
+			"animalrescue_adopter": resourceAnimalRescueAdopter(),
+			"animalrescue_adoptee": resourceAnimalRescueAdoptee(),
 		},
 	}
 }

@@ -1,12 +1,12 @@
 ---
-layout: "animal-rescue"
-page_title: "Provider: Animal-Rescue"
-sidebar_current: "docs-animal-rescue-index"
+layout: "animalrescue"
+page_title: "Provider: AnimalRescue"
+sidebar_current: "docs-animalrescue-index"
 description: |-
-  Terraform provider animal-rescue.
+  Terraform provider animalrescue.
 ---
 
-# Animal-Rescue Provider
+# AnimalRescue Provider
 
 Use this paragraph to give a high-level overview of your provider, and any configuration it requires.
 
@@ -15,11 +15,11 @@ Use the navigation to the left to read about the available resources.
 ## Example Usage
 
 ```hcl
-provider "animal-rescue" {
+provider "animalrescue" {
 }
 
 # Example resource configuration
-resource "animal-rescue_resource" "example" {
+resource "animalrescue_resource" "example" {
   # ...
 }
 ```

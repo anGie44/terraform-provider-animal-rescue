@@ -1,9 +1,9 @@
-Terraform Provider Scaffolding
+Terraform Provider AnimalRescue
 ==================
 
 This repository is a *template* for a [Terraform](https://www.terraform.io) provider. It is intended as a starting point for creating Terraform providers, containing:
 
- - A resource, and a data source (`animal-rescue/`),
+ - A resource, and a data source (`animalrescue/`),
  - Documentation (`website/`),
  - Recommended build system (`GNUMakefile`, `.travis.yml`, `scripts/`),
  - Miscellanious meta files.

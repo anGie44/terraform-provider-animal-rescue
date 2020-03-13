@@ -1,8 +1,7 @@
 TEST?=$$(go list ./... |grep -v 'vendor')
 GOFMT_FILES?=$$(find . -name '*.go' |grep -v vendor)
 WEBSITE_REPO=github.com/hashicorp/terraform-website
-PKG_NAME=rescue
-DIR_NAME=animal-rescue
+PKG_NAME=animalrescue
 COVER_TEST?=$$(go list ./... |grep -v 'vendor')
 
 .EXPORT_ALL_VARIABLES:

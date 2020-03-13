@@ -1,12 +1,12 @@
-package rescue
+package animalrescue
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
-func dataSourceRescueAdopter() *schema.Resource {
+func dataSourceAnimalRescueAdoptee() *schema.Resource {
 	return &schema.Resource{
-		Read: dataSourceRescueAdopterRead,
+		Read: dataSourceAnimalRescueAdopteeRead,
 
 		Schema: map[string]*schema.Schema{
 			"sample_attribute": {
@@ -17,6 +17,6 @@ func dataSourceRescueAdopter() *schema.Resource {
 	}
 }
 
-func dataSourceRescueAdopterRead(d *schema.ResourceData, meta interface{}) error {
+func dataSourceAnimalRescueAdopteeRead(d *schema.ResourceData, meta interface{}) error {
 	return nil
 }
