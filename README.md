@@ -3,7 +3,7 @@ Terraform Provider Scaffolding
 
 This repository is a *template* for a [Terraform](https://www.terraform.io) provider. It is intended as a starting point for creating Terraform providers, containing:
 
- - A resource, and a data source (`scaffolding/`),
+ - A resource, and a data source (`animal-rescue/`),
  - Documentation (`website/`),
  - Recommended build system (`GNUMakefile`, `.travis.yml`, `scripts/`),
  - Miscellanious meta files.
@@ -22,17 +22,17 @@ Requirements
 Building The Provider
 ---------------------
 
-Clone repository to: `$GOPATH/src/github.com/hashicorp/terraform-provider-scaffolding`
+Clone repository to: `$GOPATH/src/github.com/hashicorp/terraform-provider-animal-rescue`
 
 ```sh
 $ mkdir -p $GOPATH/src/github.com/hashicorp; cd $GOPATH/src/github.com/hashicorp
-$ git clone git@github.com:hashicorp/terraform-provider-scaffolding
+$ git clone git@github.com:hashicorp/terraform-provider-animal-rescue
 ```
 
 Enter the provider directory and build the provider
 
 ```sh
-$ cd $GOPATH/src/github.com/hashicorp/terraform-provider-scaffolding
+$ cd $GOPATH/src/github.com/hashicorp/terraform-provider-animal-rescue
 $ make build
 ```
 
@@ -69,7 +69,7 @@ To compile the provider, run `make build`. This will build the provider and put 
 ```sh
 $ make bin
 ...
-$ $GOPATH/bin/terraform-provider-scaffolding
+$ $GOPATH/bin/terraform-provider-animal-rescue
 ...
 ```
 

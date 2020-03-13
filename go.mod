@@ -1,4 +1,4 @@
-module github.com/hashicorp/terraform-provider-scaffolding
+module github.com/anGie44/terraform-provider-animal-rescue
 
 go 1.12
 

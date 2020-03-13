@@ -1,4 +1,4 @@
-package scaffolding
+package rescue
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
@@ -8,10 +8,12 @@ import (
 func Provider() terraform.ResourceProvider {
 	return &schema.Provider{
 		DataSourcesMap: map[string]*schema.Resource{
-			"scaffolding_data_source": dataSourceScaffolding(),
+			"rescue_adopter": dataSourceRescueAdopter(),
+			"rescue_adoptee": dataSourceRescueAdoptee(),
 		},
 		ResourcesMap: map[string]*schema.Resource{
-			"scaffolding_resource": resourceScaffolding(),
+			"rescue_adopter": resourceRescueAdopter(),
+			"rescue_adoptee": resourceRescueAdoptee(),
 		},
 	}
 }

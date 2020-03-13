@@ -1,12 +1,12 @@
-package scaffolding
+package rescue
 
 import (
 	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
 )
 
-func dataSourceScaffolding() *schema.Resource {
+func dataSourceRescueAdoptee() *schema.Resource {
 	return &schema.Resource{
-		Read: dataSourceScaffoldingRead,
+		Read: dataSourceRescueAdopteeRead,
 
 		Schema: map[string]*schema.Schema{
 			"sample_attribute": {
@@ -17,6 +17,6 @@ func dataSourceScaffolding() *schema.Resource {
 	}
 }
 
-func dataSourceScaffoldingRead(d *schema.ResourceData, meta interface{}) error {
+func dataSourceRescueAdopteeRead(d *schema.ResourceData, meta interface{}) error {
 	return nil
 }
