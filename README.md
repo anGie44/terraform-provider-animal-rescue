@@ -1,5 +1,5 @@
 Terraform Provider AnimalRescue
-==================
+=======
 
 This repository is a *template* for a [Terraform](https://www.terraform.io) provider. It is intended as a starting point for creating Terraform providers, containing:
 
@@ -22,17 +22,17 @@ Requirements
 Building The Provider
 ---------------------
 
-Clone repository to: `$GOPATH/src/github.com/hashicorp/terraform-provider-animal-rescue`
+Clone repository to: `$GOPATH/src/github.com/hashicorp/terraform-provider-animalrescue`
 
 ```sh
 $ mkdir -p $GOPATH/src/github.com/hashicorp; cd $GOPATH/src/github.com/hashicorp
-$ git clone git@github.com:hashicorp/terraform-provider-animal-rescue
+$ git clone git@github.com:hashicorp/terraform-provider-animalrescue
 ```
 
 Enter the provider directory and build the provider
 
 ```sh
-$ cd $GOPATH/src/github.com/hashicorp/terraform-provider-animal-rescue
+$ cd $GOPATH/src/github.com/hashicorp/terraform-provider-animalrescue
 $ make build
 ```
 
@@ -69,7 +69,7 @@ To compile the provider, run `make build`. This will build the provider and put 
 ```sh
 $ make bin
 ...
-$ $GOPATH/bin/terraform-provider-animal-rescue
+$ $GOPATH/bin/terraform-provider-animalrescue
 ...
 ```
 
