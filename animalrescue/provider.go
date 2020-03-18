@@ -10,10 +10,12 @@ func Provider() terraform.ResourceProvider {
 		DataSourcesMap: map[string]*schema.Resource{
 			"animalrescue_adopter": dataSourceAnimalRescueAdopter(),
 			"animalrescue_adoptee": dataSourceAnimalRescueAdoptee(),
+			"animalrescue_petpref": dataSourceAnimalRescuePetPref(),
 		},
 		ResourcesMap: map[string]*schema.Resource{
 			"animalrescue_adopter": resourceAnimalRescueAdopter(),
 			"animalrescue_adoptee": resourceAnimalRescueAdoptee(),
+			"animalresuce_petpref": resourceAnimalRescuePetPref(),
 		},
 	}
 }
