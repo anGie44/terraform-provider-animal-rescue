@@ -9,11 +9,6 @@ func TestPetPrefCreate(t *testing.T) {
 
 }
 
-func TestPetPrefRead(t *testing.T) {
-	// TODO
-
-}
-
 func TestPetPrefUpdate(t *testing.T) {
 	// TODO
 

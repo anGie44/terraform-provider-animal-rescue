@@ -9,11 +9,6 @@ func TestAdopteeCreate(t *testing.T) {
 
 }
 
-func TestAdopteeRead(t *testing.T) {
-	// TODO
-
-}
-
 func TestAdopteeUpdate(t *testing.T) {
 	// TODO
 
