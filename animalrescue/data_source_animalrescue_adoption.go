@@ -9,10 +9,6 @@ func dataSourceAnimalRescueAdoption() *schema.Resource {
 		Read: dataSourceAnimalRescueAdoptionRead,
 
 		Schema: map[string]*schema.Schema{
-			"id": {
-				Type:     schema.TypeInt,
-				Required: true,
-			},
 			"adopter_first_name": {
 				Type:     schema.TypeString,
 				Required: true,

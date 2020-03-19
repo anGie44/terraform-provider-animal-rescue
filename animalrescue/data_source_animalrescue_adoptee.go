@@ -9,7 +9,7 @@ func dataSourceAnimalRescueAdoptee() *schema.Resource {
 		Read: dataSourceAnimalRescueAdopteeRead,
 
 		Schema: map[string]*schema.Schema{
-			"sample_attribute": {
+			"name": {
 				Type:     schema.TypeString,
 				Required: true,
 			},

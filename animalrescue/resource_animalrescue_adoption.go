@@ -12,20 +12,21 @@ func resourceAnimalRescueAdoption() *schema.Resource {
 		Delete: resourceAnimalRescueAdoptionDelete,
 
 		Schema: map[string]*schema.Schema{
-			"id": {
-				Type: schema.TypeInt,
-			},
 			"adopter_first_name": {
-				Type: schema.TypeString,
+				Type:     schema.TypeString,
+				Required: true,
 			},
 			"adopter_last_name": {
-				Type: schema.TypeString,
+				Type:     schema.TypeString,
+				Required: true,
 			},
 			"adoptee_name": {
-				Type: schema.TypeString,
+				Type:     schema.TypeString,
+				Required: true,
 			},
 			"adoption_date": {
-				Type: schema.TypeString,
+				Type:     schema.TypeString,
+				Required: true,
 			},
 		},
 	}
